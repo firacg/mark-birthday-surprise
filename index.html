@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123b67"><meta name="description" content="Марк, с трёхлетием! Твоё большое праздничное видеопоздравление."><meta name="robots" content="noindex,nofollow">
+<meta property="og:title" content="С днём рождения, Марк! 🎉"><meta property="og:description" content="Открой своё праздничное поздравление!">
+<title>С днём рождения, Марк! 🎉</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23ffca3a'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-size='48' font-family='Arial' font-weight='bold' fill='%23143966'%3E3%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script>
+</head>
+<body>
+<div class="party-background" aria-hidden="true"></div><div class="party-shade" aria-hidden="true"></div>
+<canvas id="celebration" aria-hidden="true"></canvas>
+<div class="page">
+<header class="birthday-header"><div class="age-badge" aria-label="Три года"><span>3</span><small>ГОДА!</small></div><div class="title"><p>СЕГОДНЯ ТВОЙ ПРАЗДНИК</p><h1>С днём рождения, <em>Марк!</em></h1></div><span class="header-star" aria-hidden="true">✦</span></header>
+<main>
+<div class="cinema">
+<div class="video-shell" id="video-shell">
+<video id="birthday-video" preload="metadata" playsinline poster="./assets/poster-1015.jpg" aria-label="Видеопоздравление Марку с трёхлетием"><source src="./assets/greeting-1015.mp4" type="video/mp4">Твой браузер не поддерживает видео. <a href="./assets/greeting-1015.mp4">Открыть поздравление</a></video>
+<button id="fullscreen" class="fullscreen-button" aria-label="На весь экран" title="На весь экран"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="gift-cover" id="gift-cover">
+<div class="gift-stars" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>✧</i></div>
+<div class="surprise-label">СЮРПРИЗ ДЛЯ ТЕБЯ!</div>
+<button id="open-gift" class="big-play" aria-label="Открыть поздравление"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M24 13 51 32 24 51z" fill="currentColor"/></svg></button>
+<p class="cover-caption">Марк, нажимай!</p>
+<span class="sound-hint">Твоё поздравление уже ждёт</span>
+</div>
+<div id="end-card" class="end-card" hidden><span class="end-stars" aria-hidden="true">✦ ★ ✦</span><p>Марк, тебе <em>три!</em><span>Приключения только начинаются!</span></p><button id="replay-end" class="end-replay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 9M4 4v6h6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Ещё раз!</button></div>
+</div>
+<div class="controls" aria-label="Управление поздравлением">
+<button id="replay" class="graphic-button replay-button" disabled><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 9M4 4v6h6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Ещё раз</span></button>
+<button id="party" class="graphic-button party-button"><span class="button-icon"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m5 23 3-14 11 11Z" fill="currentColor"/><path d="m14 7 2-4m4 10 5-1M18 8l4-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="7" r="1.5"/><circle cx="11" cy="3" r="1.5"/></svg></span><span>Конфетти!</span></button>
+<button id="sound" class="graphic-button sound-button" aria-pressed="false"><span class="button-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4 6 8H3v8h3l5 4V4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sound-label">Звук вкл.</span></button>
+</div>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+</div>
+</main>
+<footer>Большой праздник для нашего маленького героя <span aria-hidden="true">♥</span></footer>
+</div>
+</body></html>
